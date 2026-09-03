@@ -5,8 +5,12 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "ios:device": "react-native run-ios --device \"ヨール\" --extra-params \"-allowProvisioningUpdates\"",
+    "ios:devices": "react-native run-ios --list-devices --extra-params \"-allowProvisioningUpdates\"",
+    "ios:simulator": "react-native run-ios --simulator \"iPhone 17 Pro\"",
+    "ios:pods": "cd ios && bundle exec pod install",
     "lint": "eslint .",
-    "start": "react-native start",
+    "start": "react-native start --reset-cache",
     "test": "jest"
   },
   "dependencies": {
